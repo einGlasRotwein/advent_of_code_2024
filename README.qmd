@@ -41,7 +41,7 @@ past_performance <-
   )
 ```
 
-This repo contains my solutions for the [Advent of Code 2024](https://adventofcode.com/2024) in `R`. This year, I'll be taking Posit's new IDE [Positron](https://positron.posit.co/) for a spin!
+This repo contains my solutions for the [Advent of Code 2024](https://adventofcode.com/2024) in `R`. This year, I'll be taking Posit's new IDE [Positron](https://positron.posit.co/) for a spin! Watch my stream (in German) [on Twitch](https://www.twitch.tv/einglasrotwein).
 
 Here's my past performance (and this year's performance, so far):
 
