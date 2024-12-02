@@ -32,6 +32,7 @@ already run in part 1. Reading in the data (and sometimes, basic
 preprocessing that has nothing to do with the puzzle solution) is
 excluded from the run time calculations.
 
-| Day | Title              | Completion Time     | Rank          | Run Time       |
-|-----|--------------------|---------------------|---------------|----------------|
-| 1   | Historian Hysteria | 13:08:13 (13:16:14) | 70868 (66063) | 0.27 (1.33) ms |
+| Day | Title              | Completion Time     | Rank          | Run Time         |
+|-----|--------------------|---------------------|---------------|------------------|
+| 1   | Historian Hysteria | 13:08:13 (13:16:14) | 70868 (66063) | 0.27 (1.33) ms   |
+| 2   | Red-Nosed Reports  | 14:11:06 (14:17:57) | 88084 (64158) | 12.70 (34.26) ms |
