@@ -40,3 +40,4 @@ excluded from the run time calculations.
 | 4   | Ceres Search       | 16:05:33 (16:26:25) | 69554 (62454) | 340.38 (241.18) ms |
 | 5   | Print Queue        | 15:47:12 (16:07:47) | 61726 (52059) | 10.62 (38.25) ms   |
 | 6   | Guard Gallivant    | 15:27:28 (–)        | 55995 (–)     | 709.4 (–) ms       |
+| 7   | Bridge Repair      | 14:39:46 (15:02:18) | 42939 (40270) | 12.8 ms (13.24 s)  |
