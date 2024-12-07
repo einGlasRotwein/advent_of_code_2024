@@ -39,3 +39,4 @@ excluded from the run time calculations.
 | 3   | Mull It Over       | 03:49:20 (05:05:54) | 36003 (34641) | 4.45 (3.29) ms     |
 | 4   | Ceres Search       | 16:05:33 (16:26:25) | 69554 (62454) | 340.38 (241.18) ms |
 | 5   | Print Queue        | 15:47:12 (16:07:47) | 61726 (52059) | 10.62 (38.25) ms   |
+| 6   | Guard Gallivant    | 15:27:28 (–)        | 55995 (–)     | 709.4 (–) ms       |
