@@ -20,7 +20,7 @@ move_guard <- function(area, x, y, direction) {
       
     }
 
-    visited <- data.frame(x = new_row:(x - 1), y = y, orientation = "u")
+    visited <- data.frame(x = x:new_row, y = y, orientation = "u")[-1, ] # exclude original position
     x <- new_row
     
   } else if (direction == "r") {
@@ -39,7 +39,7 @@ move_guard <- function(area, x, y, direction) {
       
     }
     
-    visited <- data.frame(x = x, y = (y + 1):new_col, orientation = "r")
+    visited <- data.frame(x = x, y = y:new_col, orientation = "r")[-1, ]
     y <- new_col
     
   } else if (direction == "d") {
@@ -58,7 +58,7 @@ move_guard <- function(area, x, y, direction) {
       
     }
     
-    visited <- data.frame(x = (x + 1):new_row, y = y, orientation = "d")
+    visited <- data.frame(x = x:new_row, y = y, orientation = "d")[-1, ]
     x <- new_row
     
   } else if (direction == "l") {
@@ -77,8 +77,7 @@ move_guard <- function(area, x, y, direction) {
       
     }
     
-    visited <- data.frame(x = x, y = new_col:(y - 1), orientation = "l")
-    visited$orientation <- "l"
+    visited <- data.frame(x = x, y = y:new_col, orientation = "l")[-1, ]
     y <- new_col
     
   }
@@ -87,15 +86,11 @@ move_guard <- function(area, x, y, direction) {
   
 }
 
-## PART 1 + 2 ----------------------------------------------------------------------------
+## PART 1 --------------------------------------------------------------------------------
 
-# New idea: If I'm going up, and I turn right, can I hit an obstacle?
-# If I'm going right, and I turn down, can I hit an obstacle?
-# Etc.
-# If I hit an obstacle, determine whether it leads back to a place I visited before 
-# in the same direction (loop), or leads out of the matrix eventually.
+start <- Sys.time()
 
-temp_pos <- which(day6 == "^", arr.ind = TRUE)
+temp_pos <- start_pos <- which(day6 == "^", arr.ind = TRUE)
 temp_orientation <- "u"
 path_track <- as.data.frame(temp_pos)
 path_track$orientation <- temp_orientation
@@ -103,7 +98,7 @@ names(path_track) <- c("x", "y", "orientation")
 on_map <- TRUE
 
 while(on_map) {
-
+  
   temp_move <- move_guard(day6, temp_pos[1], temp_pos[2], temp_orientation)
   temp_pos <- cbind(temp_move$x, temp_move$y)
   path_track <- rbind.data.frame(path_track, temp_move$visited)
@@ -113,5 +108,68 @@ while(on_map) {
   
 }
 
-# part 1
 nrow(unique(path_track[c("x", "y")]))
+
+Sys.time() - start
+
+## PART 2 --------------------------------------------------------------------------------
+
+# Fuck this. On my 7th attempt to solve this, I just use brute force. Throw in an obstacle 
+# for each position on the path, and see whether I run into a loop.
+# Apparently, we need to start at the beginning for every obstacle, because it might 
+# disrupt the part at an even earlier point ...
+
+start <- Sys.time()
+
+new_obstacles <- data.frame(matrix(nrow = 0, ncol = 2))
+names(new_obstacles) <- c("x", "y")
+
+# to do: test what's wrong in i = 14
+
+pb <- txtProgressBar(min = 0, max = nrow(path_track), initial = 0, style = 3) 
+
+for (i in 2:nrow(path_track)) { # exclude start position
+  
+  temp_pos <- data.frame(x = start_pos[1], y = start_pos[2], orientation = "u") # always go back to start
+  
+  # place obstacle
+  temp_area <- day6
+  temp_area[cbind(path_track$x[i], path_track$y[i])] <- "#"
+  
+  # start from previous position and determine whether we run into a loop
+  temp_orientation <- temp_pos$orientation
+  on_map <- TRUE
+
+  temp_path_track <- temp_pos
+  
+  while(on_map) {
+    
+    temp_move <- move_guard(temp_area, temp_pos$x, temp_pos$y, temp_orientation)
+    temp_pos <- data.frame(x = temp_move$x, y = temp_move$y, direction = temp_move$direction)
+    temp_path_track <- rbind.data.frame(temp_path_track, unique(temp_move$visited))
+    
+    if (nrow(unique(temp_path_track)) != nrow(temp_path_track)) {
+      
+      # if it's a loop, save obstacle position
+      new_obstacles <- 
+      rbind.data.frame(new_obstacles, data.frame(x = path_track$x[i], y = path_track$y[i]))
+      on_map <- FALSE # and abort path
+      
+    } else {
+
+      temp_orientation <- temp_move$direction
+      on_map <- temp_move$on_map
+
+    }
+    
+  }
+
+  setTxtProgressBar(pb, i)
+  
+}
+
+close(pb)
+
+nrow(unique(new_obstacles))
+
+Sys.time() - start
