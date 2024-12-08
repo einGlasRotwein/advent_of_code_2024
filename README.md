@@ -41,3 +41,4 @@ excluded from the run time calculations.
 | 5 | Print Queue | 15:47:12 (16:07:47) | 61726 (52059) | 10.62 (38.25) ms |
 | 6 | Guard Gallivant | 15:27:28 (\>24h) | 55995 (56272) | 834.51 ms (40.94 min) |
 | 7 | Bridge Repair | 14:39:46 (15:02:18) | 42939 (40270) | 12.8 ms (13.24 s) |
+| 8 | Resonant Collinearity | 14:51:17 (15:10:42) | 40613 (38218) | 36.99 (44.58) ms |
