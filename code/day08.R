@@ -19,9 +19,6 @@ get_antinodes <- function(area, a1, a2) {
 
 }
 
-# a1 <- c(5, 5)
-# a2 <- c(3, 6)
-
 get_antinodes2 <- function(area, a1, a2) {
 
   x_diff <- a1[1] - a2[1]
