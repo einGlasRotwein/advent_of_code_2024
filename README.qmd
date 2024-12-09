@@ -39,7 +39,7 @@ aoc_theme <-
 past_performance <- 
   data.frame(
     year = factor(2020:2024),
-    stars = c(31, 33, 30, 40, 16)
+    stars = c(31, 33, 30, 40, 18)
   )
 ```
 
@@ -80,6 +80,7 @@ Reading in the data (and sometimes, basic preprocessing that has nothing to do w
 | 6   | Guard Gallivant        | 15:27:28 (>24h) | 55995 (56272)   | 834.51 ms (40.94 min)     |
 | 7   | Bridge Repair        | 14:39:46 (15:02:18) | 42939 (40270)   | 12.8 ms (13.24 s)     |
 | 8   | Resonant Collinearity        | 14:51:17 (15:10:42) | 40613 (38218)   | 36.99 (44.58) ms     |
+| 9   | Disk Fragmenter        | 13:15:21 (14:18:30) | 37046 (27165)   | 0.04 (28.05) s     |
 
 ## Plots
 
