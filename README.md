@@ -44,6 +44,7 @@ excluded from the run time calculations.
 | 8 | Resonant Collinearity | 14:51:17 (15:10:42) | 40613 (38218) | 36.99 (44.58) ms |
 | 9 | Disk Fragmenter | 13:15:21 (14:18:30) | 37046 (27165) | 0.04 (28.05) s |
 | 10 | Hoof It | 15:38:57 (15:48:30) | 37383 (36387) | 1.82 (1.80) s |
+| 11 | Plutonian Pebbles | 16:38:44 (16:39:17) | 43868 (34083) | 0.08 (2.12) s |
 
 ## Plots
 
