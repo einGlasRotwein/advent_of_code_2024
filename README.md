@@ -45,9 +45,13 @@ excluded from the run time calculations.
 | 9 | Disk Fragmenter | 13:15:21 (14:18:30) | 37046 (27165) | 0.04 (28.05) s |
 | 10 | Hoof It | 15:38:57 (15:48:30) | 37383 (36387) | 1.82 (1.80) s |
 | 11 | Plutonian Pebbles | 16:38:44 (16:39:17) | 43868 (34083) | 0.08 (2.12) s |
+| 12 | Garden Groups | \>24h (\>24h) | 46109 (37079) | 1.05 (1.05) s[^1] |
 
 ## Plots
 
 ### Day 8 - Antennas and their antinodes
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
+
+[^1]: Part 1 and 2 ran together using the same code, so the run time is
+    the same.
