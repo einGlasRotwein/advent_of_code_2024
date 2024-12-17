@@ -39,7 +39,7 @@ aoc_theme <-
 past_performance <- 
   data.frame(
     year = factor(2020:2024),
-    stars = c(31, 33, 30, 40, 22)
+    stars = c(31, 33, 30, 40, 24)
   )
 ```
 
