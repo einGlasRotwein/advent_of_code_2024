@@ -46,6 +46,7 @@ excluded from the run time calculations.
 | 10 | Hoof It | 15:38:57 (15:48:30) | 37383 (36387) | 1.82 (1.80) s |
 | 11 | Plutonian Pebbles | 16:38:44 (16:39:17) | 43868 (34083) | 0.08 (2.12) s |
 | 12 | Garden Groups | \>24h (\>24h) | 46109 (37079) | 1.05 (1.05) s[^1] |
+| 13 | Claw Contraption | \>24h (–) | 43388 (–) | 26.76 (–) ms |
 
 ## Plots
 

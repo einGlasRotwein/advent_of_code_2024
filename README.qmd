@@ -39,7 +39,7 @@ aoc_theme <-
 past_performance <- 
   data.frame(
     year = factor(2020:2024),
-    stars = c(31, 33, 30, 40, 24)
+    stars = c(31, 33, 30, 40, 25)
   )
 ```
 
@@ -84,6 +84,7 @@ Reading in the data (and sometimes, basic preprocessing that has nothing to do w
 | 10   | Hoof It        | 15:38:57 (15:48:30) | 37383 (36387)   | 1.82 (1.80) s     |
 | 11   | Plutonian Pebbles        | 16:38:44 (16:39:17) | 43868 (34083)   | 0.08 (2.12) s     |
 | 12   | Garden Groups        | >24h (>24h) | 46109 (37079)   | 1.05 (1.05) s[^1]     |
+| 13   | Claw Contraption        | >24h (--) | 43388 (--)   | 26.76 (--) ms     |
 
 [^1]: Part 1 and 2 ran together using the same code, so the run time is the same.
 
