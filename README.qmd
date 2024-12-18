@@ -49,7 +49,7 @@ This repo contains my solutions for the [Advent of Code 2024](https://adventofco
 Here's my past performance (and this year's performance, so far):
 
 ```{r}
-#| label: fig-performance
+#| label: performance
 #| fig.height: 2.5
 past_performance %>% 
   ggplot(aes(x = year, y = stars)) +
@@ -95,13 +95,13 @@ Reading in the data (and sometimes, basic preprocessing that has nothing to do w
 ### Day 8 - Antennas and their antinodes
 
 ```{r}
-#| label: fig-day8
+#| label: day8
 day8_plot
 ```
 
 ### Day 14 - Restroom Redoubt
 
 ```{r}
-#| label: fig-day14
+#| label: day14
 day14_plot
 ```

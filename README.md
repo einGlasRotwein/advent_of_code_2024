@@ -8,14 +8,7 @@ my stream (in German) [on Twitch](https://www.twitch.tv/einglasrotwein).
 
 Here’s my past performance (and this year’s performance, so far):
 
-<div id="fig-performance">
-
-<img src="README_files/figure-commonmark/fig-performance-1.png"
-id="fig-performance" />
-
-Figure 1
-
-</div>
+![](README_files/figure-commonmark/performance-1.png)
 
 ## TOC
 
@@ -53,25 +46,11 @@ excluded from the run time calculations.
 
 ### Day 8 - Antennas and their antinodes
 
-<div id="fig-day8">
-
-<img src="README_files/figure-commonmark/fig-day8-1.png"
-id="fig-day8" />
-
-Figure 2
-
-</div>
+![](README_files/figure-commonmark/day8-1.png)
 
 ### Day 14 - Restroom Redoubt
 
-<div id="fig-day14">
-
-<img src="README_files/figure-commonmark/fig-day14-1.png"
-id="fig-day14" />
-
-Figure 3
-
-</div>
+![](README_files/figure-commonmark/day14-1.png)
 
 [^1]: Part 1 and 2 ran together using the same code, so the run time is
     the same.
