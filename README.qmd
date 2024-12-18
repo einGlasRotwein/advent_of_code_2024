@@ -14,7 +14,8 @@ library(tidyverse)
 library(extrafont)
 library(ggstar)
 
-load("day8_plot.RData")
+load("./plot_data/day8_plot.RData")
+load("./plot_data/day14_plot.RData")
 
 aoc_green <- "#009900"
 aoc_gold <- "#ffff66"
@@ -94,5 +95,13 @@ Reading in the data (and sometimes, basic preprocessing that has nothing to do w
 ### Day 8 - Antennas and their antinodes
 
 ```{r}
+#| label: fig-day8
 day8_plot
+```
+
+### Day 14 - Restroom Redoubt
+
+```{r}
+#| label: fig-day14
+day14_plot
 ```

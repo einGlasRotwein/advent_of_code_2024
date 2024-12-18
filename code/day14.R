@@ -68,3 +68,30 @@ for (i in seq_along(new_xs)) {
 }
 
 # apply(test_area, 1, function(x) paste0(x, collapse = ""))
+
+## PLOT ----------------------------------------------------------------------------------
+
+library(tidyverse)
+
+aoc_green <- "#009900"
+github_grey <- "#0d1117"
+
+# AoC-ish plot theme that blends into the GitHub dark mode
+aoc_theme <- 
+  theme(
+    panel.background = element_rect(fill = NA, colour = NA, linewidth = 1),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = github_grey, colour = github_grey),
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    axis.line = element_blank(),
+    axis.ticks = element_blank()
+  )
+
+day14_plot <- 
+data.frame(x = -new_xs, y = -new_ys) %>% 
+  ggplot(aes(x = x, y = y)) +
+  geom_point(colour = aoc_green, shape = 3) +
+  aoc_theme
+
+save(day14_plot, file = "./plot_data/day14_plot.RData")
