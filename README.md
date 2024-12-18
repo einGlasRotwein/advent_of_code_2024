@@ -47,6 +47,7 @@ excluded from the run time calculations.
 | 11 | Plutonian Pebbles | 16:38:44 (16:39:17) | 43868 (34083) | 0.08 (2.12) s |
 | 12 | Garden Groups | \>24h (\>24h) | 46109 (37079) | 1.05 (1.05) s[^1] |
 | 13 | Claw Contraption | \>24h (\>24h) | 43388 (39057) | 21.55 (23.26) ms |
+| 14 | Restroom Redoubt | \>24h (\>24h) | 41572 (37372) | 0.69 (299.5) ms |
 
 ## Plots
 
