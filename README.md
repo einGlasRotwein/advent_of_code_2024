@@ -42,6 +42,9 @@ excluded from the run time calculations.
 | 13 | Claw Contraption | \>24h (\>24h) | 43388 (39057) | 21.55 (23.26) ms |
 | 14 | Restroom Redoubt | \>24h (\>24h) | 41572 (37372) | 0.69 (299.5) ms |
 | 15 | Warehouse Woes | \>24h (–) | 38079 (–) | 164.24 (–) ms |
+| 16 | Reindeer Maze | – (–) | – (–) | – (–) ms |
+| 17 | Chronospatial Computer | – (–) | – (–) | – (–) ms |
+| 18 | RAM Run | \>24h (–) | 29915 (–) | 0.57 (27.75) s |
 
 ## Plots
 
