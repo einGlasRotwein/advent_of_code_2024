@@ -90,7 +90,7 @@ Reading in the data (and sometimes, basic preprocessing that has nothing to do w
 | 15   | Warehouse Woes        | >24h (--) | 38079 (--)   | 164.24 (--) ms     |
 | 16   | Reindeer Maze        | -- (--) | -- (--)   | -- (--) ms     |
 | 17   | Chronospatial Computer        | -- (--) | -- (--)   | -- (--) ms     |
-| 18   | RAM Run        | >24h (--) | 29915 (--)   | 0.57 (27.75) s     |
+| 18   | RAM Run        | >24h (>24h) | 29915 (29237)   | 0.57 (27.75) s     |
 
 [^1]: Part 1 and 2 ran together using the same code, so the run time is the same.
 

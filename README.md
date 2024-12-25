@@ -44,7 +44,7 @@ excluded from the run time calculations.
 | 15 | Warehouse Woes | \>24h (–) | 38079 (–) | 164.24 (–) ms |
 | 16 | Reindeer Maze | – (–) | – (–) | – (–) ms |
 | 17 | Chronospatial Computer | – (–) | – (–) | – (–) ms |
-| 18 | RAM Run | \>24h (–) | 29915 (–) | 0.57 (27.75) s |
+| 18 | RAM Run | \>24h (\>24h) | 29915 (29237) | 0.57 (27.75) s |
 
 ## Plots
 
